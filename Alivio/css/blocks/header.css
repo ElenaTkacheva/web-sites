@@ -29,9 +29,35 @@
     margin-left: auto;
 }
 .header-login a {
+    margin-top: 1px;
     color: #000000;
     transition: color 0.2s ease;
 }
 .header-login a:hover {
     color: #01996D;
+}
+@media (max-width: 1199px) {
+    .header-row {
+        justify-content: space-between;
+    }
+    .header-nav {
+        margin-left: 30px;
+    }
+    .header-nav li + li {
+        margin-left: 50px;
+    }
+    .header-login {
+        margin-left: unset;
+    }
+    .header-login .btn {
+        margin-left: 18px;
+    }
+}
+@media (max-width: 991px) {
+    .header-nav {
+        display: none;
+    }
+    .header-login {
+        display: none;
+    }
 }

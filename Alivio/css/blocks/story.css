@@ -35,7 +35,7 @@ a.btn {
 .story-video {
     max-width: 895px;
     position: relative;
-        border-radius: 18px;
+    border-radius: 18px;
     overflow: hidden;
 }
 .story-video-overlay {
@@ -51,5 +51,40 @@ a.btn {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+@media (max-width: 1199px) {
+    .story-row {
+        flex-direction: column-reverse;
+    }
+    section.story {
+        padding: 70px 0 70px;
+    }
+    .story-video {
+        margin-bottom: 40px;
+    }
+    .story-heading {
+        font-size: 40px;
+    }
+    .story-text {
+        font-size: 20px;
+        line-height: 130%;
+    }
+    .story-text + * {
+        margin-top: 30px;
+    }
+}
+@media (max-width: 991px) {
+    section.story {
+        padding: 50px 0 50px;
+    }
+    .story-heading {
+        font-size: 30px;
+    }
+    .story-text {
+        font-size: 18px;
+    }
+    .story-text + * {
+        margin-top: 20px;
+    }
 }
 
