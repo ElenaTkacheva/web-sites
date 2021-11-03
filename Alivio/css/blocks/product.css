@@ -130,12 +130,13 @@
 @media (max-width: 991px) {
     .product {
         padding-top: 40px;
+        padding-bottom: 80px;
     }
     .product-row {
         flex-direction: column-reverse;
     }
     .product-content-subtitle {
-        font-size: 40px;
+        font-size: 30px;
     }
     .product-content {
         margin-bottom: 40px;
@@ -153,9 +154,15 @@
         text-align: center;
     }
 }
-@media (max-width: 499px) {
+@media (max-width: 500px) {
+    .product {
+        padding-bottom: 40px;
+    }
     .product-card {
-        margin-top: -30%;
+        margin: -30% 15px 0;
+    }
+    .card {
+        max-width: 296px;
     }
 }
 
