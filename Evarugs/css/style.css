@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 html,
 body {
     font-size: 62.5%;
@@ -12,6 +17,11 @@ h1, h2, h3, h4, h5, h6 {
 .container {
     width: 120rem;
     margin: 0 auto;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
 }
 .header {
     background: linear-gradient(269.91deg, rgba(46, 49, 146, 0.7) 0%, rgba(212, 20, 90, 0.7) 98.16%);
@@ -36,6 +46,9 @@ h1, h2, h3, h4, h5, h6 {
 .header__telephone > * + * {
     margin-left: 1.5rem;
 }
+.header__telephone-text > * + * {
+    margin-left: 1.2rem;
+}
 .header__maps > * + * {
     margin-left: 1.5rem;
 }
@@ -50,11 +63,6 @@ ul {
 }
 ul > li {
     list-style: none;
-}
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; 
 }
 .header__telephone-img {
     width: 2rem;
@@ -142,6 +150,9 @@ img {
     width: 53.3rem;
     height: 68.6rem;
 }
+.about {
+    padding-bottom: 16.1rem;
+}
 .about__header {
     margin-bottom: 10rem;
     padding-top: 2.5rem;
@@ -192,6 +203,71 @@ img {
     line-height: 114%;
     color: #767676;
 }
+.review {
+    background: linear-gradient(94.31deg, rgba(212, 20, 90, 0.25) 0.96%, rgba(46, 49, 146, 0.25) 104.83%);
+}
+.review__slider {
+    padding-top: 6.4rem;
+}
+.review__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 25rem;
+    width: 53.6rem;
+    padding: 6.3rem 4.5rem 5rem 4.5rem;
+    background-color: #FFFFFF;
+    box-shadow: 0rem 0rem 3rem rgba(0, 0, 0, 0.25);
+    border-radius: 0.9rem;
+}
+.review__wrapper {
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+}
+.review__slide-img {
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, 45%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(50% 0, 100% 30%, 100% 70%, 50% 100%, 0 70%, 0 30%);
+    width: 11.5rem;
+    height: 13rem;
+    background: linear-gradient(90deg, #B90160 0%, #2E3192 100%);
+}
+.review__slide-photo {
+    clip-path: polygon(50% 5%, 98% 31%, 98% 69%, 50% 96%, 1% 67%, 1% 33%);
+    width: 10.5rem;
+    height: 12.5rem;
+    background-color: #FFFFFF;
+}
+.review__slide-text {
+    width: 44.5rem;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 117%;
+    text-align: center;
+}
+.review__slide-text::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 0.2rem;
+    width: 13rem;
+    background: linear-gradient(90deg, #B90160 0%, #2E3192 100%);
+}
+.review__slide-name {
+    margin-top: 4rem;
+    font-weight: 300;
+    font-size: 1.3rem;
+    line-height: 115%;
+}
 .footer__inst-img {
     width: 3.3rem;
     height: 3.3rem;
@@ -232,3 +308,211 @@ img {
     font-size: 1.4rem;
     line-height: 114%;
 }
+.footer__address ul {
+    width: 22.4rem;
+}
+.footer__address ul > * + * {
+    margin-top: 2rem;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none; 
+    overflow-y: auto;
+    overflow-x: hidden;
+    backdrop-filter: blur(4rem);
+    padding: 3rem 0;
+    z-index: 100;
+}
+.modal__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 118rem;
+    margin: 0 auto;
+    background: #FFFFFF url(../img/bc.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 3.5rem rgba(212, 20, 90, 0.25);
+    border-radius: 1.5rem;
+}
+.modal__inner-header {
+    margin-bottom: 3.2rem;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 117%;
+    text-transform: uppercase;
+    color: #000000;
+}
+.modal__inner-elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal__item {
+    display: flex;
+    justify-content: space-between;
+    width: 75rem;
+}
+.modal__item-long {
+    width: 100%;
+    min-height: 8rem;
+    margin-bottom: 4rem;
+}
+.modal__item:first-child {
+    margin-bottom: 1.7rem;
+}
+.modal__wrap-input {
+    width: 36rem;
+    min-height: 5rem;
+}
+.modal__input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 114%;
+    color: #989898;
+    padding-left: 2.1rem;
+    padding-right: 2.1rem;
+}
+.modal__message {
+    width: 100%;
+    outline: none;
+    resize: none;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 114%;
+    color: #989898;
+    padding: 1rem 2.1rem;
+}
+.modal__policy {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 115%;
+    margin-bottom: 2rem;
+    color: #000000;
+}
+.modal__policy input {
+    margin-right: 1rem;
+    width: 2rem;
+    height: 2rem;
+}
+.modal__policy a {
+    text-decoration: none;
+}
+.modal__button {
+    max-width: 19rem;
+    font-size: 2rem;
+    line-height: 114%;
+    text-align: center;
+}
+.active {
+    display: flex;
+}
+
+
+
+
+
+
+/*сетка*/
+@media (max-width: 108em) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 105em) {
+    html {
+        font-size: 8.75px;
+    }
+}
+
+@media (max-width: 91.5em) {
+    html {
+        font-size: 7.9px;
+    }
+}
+
+@media (max-width: 91em) {
+    html {
+        font-size: 8.4px;
+    }
+}
+
+@media (max-width: 90em) {
+    html {
+        font-size: 7.9px;
+    }
+}
+
+@media (max-width: 80em) {
+    html {
+        font-size: 7.2px
+    }
+}
+
+@media (max-width: 72em) {
+    html {
+        font-size: 6.5px;
+    }
+}
+
+@media (max-width: 64em) {
+    html {
+        font-size: 5.5px;
+    }
+}
+
+@media (max-width: 48em) {
+    html {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 44em) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 38em) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 34em) {
+    html {
+        font-size: 7px;
+    }
+}
+
+@media (max-width: 30em) {
+    html {
+        font-size: 6px;
+    }
+}
+
+@media (max-width: 26em) {
+    html {
+        font-size: 4.5px;
+    }
+}
+
+@media (max-width: 21em) {
+    html {
+        font-size: 4.4px;
+    }
+}
+
+/*сетка*/
