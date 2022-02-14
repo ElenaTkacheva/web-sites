@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper-bundle.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +15,8 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="header__menu">
+            
+                <div class="header__menu">
                 <div class="header__logo">
                     <img src="./img/logo.png" alt="logo">
                 </div>
@@ -35,6 +37,7 @@
                     <img src="img/icons/facebook.svg" alt="icons">
                 </a>
             </div>
+            
         </div>
     </header>
     <main class="main">
@@ -76,10 +79,43 @@
                 </div>
             </div>
             <h1 class="main__header">Бэтмен</h1>
-            <div class="main__description">
-                <p>После двух лет поисков правосудия на улицах Готэма для своих сограждан Бэтмен становится олицетворением беспощадного возмездия. Когда в городе происходит серия жестоких нападений на представителей элиты, загадочные улики приводят Брюса Уэйна в самые темные закоулки преступного мира. Теперь под прицелом оказывается сам Бэтмен.</p>
+            <div class="main-description__wrap">
+                <div class="main__description">
+                    <p>После двух лет поисков правосудия на улицах Готэма для своих сограждан Бэтмен становится олицетворением беспощадного возмездия. Когда в городе происходит серия жестоких нападений на представителей элиты, загадочные улики приводят Брюса Уэйна в самые темные закоулки преступного мира. Теперь под прицелом оказывается сам Бэтмен.</p>
+                </div>
+                <div class="main-button__play">
+                    <div class="main-button__dark">
+                        <img src="./img/play.svg" alt="play">
+                    </div>
+                </div>
             </div>
             <a href="#" class="main__button">Купить билеты</a>
+            <div class="main-slider__wrap">
+                <div class="main-slider swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide main-slider__slide">
+                            <img src="./img/slider/card1.png" alt="card1">
+                            <span>Трейлер #1</span>
+                        </div>
+                        <div class="swiper-slide main-slider__slide">
+                            <img src="./img/slider/card2.png" alt="card1">
+                            <span>Трейлер #2</span>
+                        </div>
+                        <div class="swiper-slide main-slider__slide">
+                            <img src="./img/slider/card1.png" alt="card1">
+                            <span>Трейлер #3</span>
+                        </div>
+                        <div class="swiper-slide main-slider__slide">
+                            <img src="./img/slider/card2.png" alt="card1">
+                            <span>Трейлер #4</span>
+                        </div>              
+                    </div>                   
+                </div>
+                <div class="main-slider__arrow">
+                    <img src="./img/arrow.svg" alt="arrow">
+                </div>     
+            </div>
         </div>
     </main>
     <footer class="footer">
@@ -100,6 +136,7 @@
             </ul>
         </div>
     </footer>
+    <script src="js/swiper-bundle.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
