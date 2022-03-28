@@ -9,6 +9,7 @@ html, body {
     font-weight: normal;
     color: #ffffff;
     background-image: linear-gradient(to right top, #060606, #050505, #030303, #020202, #000000);
+    scroll-behavior: smooth;
 }
 img {
     width: 100%;
