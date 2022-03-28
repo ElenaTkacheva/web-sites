@@ -22,7 +22,7 @@
                 <a href="#">Процесс работы</a>
                 <a href="#">Команда</a>
             </nav>
-            <button type="button" class="button header__button">Оставить заявку</button>
+            <button type="button" class="button header__button modal__button">Оставить заявку</button>
         </div>
     </header>
     <main class="main">
@@ -72,7 +72,7 @@
                 <div class="process__wrap">
                     <div class="process__title">
                         <div class="process__img">
-                            <img src="./img/icon-heading1.svg" alt="process">
+                            <img src="./img/process.svg" alt="process">
                         </div>
                         <h2 class="process__header">Процесс работы</h2>
                     </div>
@@ -98,9 +98,98 @@
                 </div>
             </div>
         </section>
+        <section class="command">
+            <div class="container">
+                <div class="process__title">
+                    <div class="process__img">
+                        <img src="./img/process.svg" alt="logo">
+                    </div>
+                    <h2 class="process__header">Наша команда</h2>
+                </div>
+                <div class="command__wrap">
+                    <div class="command__item block__center">
+                        <div class="command__img">
+                            <img src="img/man1.jpg" alt="com-1">
+                        </div>
+                        <h3 class="command__name">Евгений Петров</h3>
+                        <div class="command__profession">Специалист по видеокартам</div>
+                        <a href="#" class="button command__link">Биография</a>
+                    </div>
+                    <div class="command__item block__center">
+                        <div class="command__img">
+                            <img src="img/man2.jpg" alt="com-2">
+                        </div>
+                        <h3 class="command__name">Алексей Козлов</h3>
+                        <div class="command__profession">Специалист по видеокартам</div>
+                        <a href="#" class="button command__link">Биография</a>
+                    </div>
+                    <div class="command__item block__center">
+                        <div class="command__img">
+                            <img src="img/man3.jpg" alt="com-3">
+                        </div>
+                        <h3 class="command__name">Дмитрий Иванов</h3>
+                        <div class="command__profession">Специалист по видеокартам</div>
+                        <a href="#" class="button command__link">Биография</a>
+                    </div>
+            </div>
+        </section>
+        <section class="assembly">
+            <div class="container">
+                <div class="assembly__wrap block__center">
+                    <h2 class="assembly__header">Закажите свою уникальную сборку</h2>
+                    <div class="assembly__description">Мы свяжемся с вами, чтобы уточнить детали заказа</div>
+                    <button class="button assembly__button modal__button">Оставить заявку</button>
+                    <div class="assembly__socials">
+                        <a href="#" class="assembly__item">
+                            <div class="assembly__img">
+                                <img src="img/vk.svg" alt="vk">
+                            </div>
+                        </a>
+                        <a href="#" class="assembly__item">
+                            <div class="assembly__img">
+                                <img src="img/youtube.svg" alt="youtube">
+                            </div>
+                        </a>
+                        <a href="#" class="assembly__item">
+                            <div class="assembly__img">
+                                <img src="img/facebook.svg" alt="facebook">
+                            </div>
+                        </a>
+                        <a href="#" class="assembly__item">
+                            <div class="assembly__img">
+                                <img src="img/instagram.svg" alt="instagram">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <form action="#" class="modal block__center">
+            <div class="modal__inner">
+                <div class="modal__close">
+                    <img src="img/cross.svg" alt="">
+                </div>
+                <h3 class="modal__header">Заявка на сборку ПК</h3>
+                <div class="modal__subheader">Мы свяжемся с вами, чтобы обсудить детали заказа</div>
+                <div class="modal__elements">
+                    <div class="modal__item">
+                        <input type="text" class="modal__input" placeholder="Как вас зовут">
+                    </div>
+                    <div class="modal__item">
+                        <input type="tel" class="modal__input" placeholder="Номер телефона">
+                    </div>
+                    <div class="modal__item">
+                        <input type="email" class="modal__input" placeholder="E-mail">
+                    </div>
+                </div>
+                <button type="submit" class="button main-display__button">Отправить</button>
+            </div>
+        </form>
     </main>
-    <footer>
-        <div class="container"></div>
-    </footer>
+
+    </main>
+    
+    <script src="js/main.js"></script>
 </body>
 </html>
