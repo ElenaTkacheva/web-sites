@@ -551,7 +551,7 @@ input {
     align-content: space-between;
     display: flex;
     flex-flow: wrap;
-    width: 29rem;
+    max-width: 29rem;
 }
 .aside__gener {
     border-radius: 3rem;
@@ -657,6 +657,9 @@ input {
   html {
     font-size: 7.2px;
   }
+    .drama {
+    margin-bottom: 2rem;
+}
 }
 @media (max-width: 72em) {
   html {
