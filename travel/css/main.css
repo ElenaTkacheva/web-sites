@@ -99,6 +99,38 @@ body {
     pointer-events: none;
 }
 
+.svg-1 {
+	position: absolute;
+	width: 48px;
+	height: 63px;
+	left: 696px;
+	top: 173px;
+}
+
+.svg-2 {
+	position: absolute;
+	width: 157px;
+	height: 37px;
+	left: 1187px;
+	top: 236px;
+} 
+
+.svg-3 {
+	position: absolute;
+	width: 157px;
+	height: 37px;
+	left: 560px;
+	top: 751px;
+}
+
+.svg-4 {
+	position: absolute;
+	width: 63px;
+	height: 83px;
+	left: 1320px;
+	top: 700px;
+}
+
 /* Nav */
 
 .nav {
@@ -162,10 +194,15 @@ body {
 	font-size: 20px;
 	color: #fff;
 	font-weight: 700;
+	transition: all 0.2s ease-in;
 }
 
 .logo a {
 	color: inherit !important;
+}
+
+.logo:hover {
+	color: var(--orange);
 }
 
 .logo--footer {
@@ -274,6 +311,11 @@ body {
 	align-items: center;
 
 	background: linear-gradient(129.54deg, #ff7b4e 15.57%, #ff584e 95.03%), #8b8b8b;
+	transition: all 0.2s ease-in;
+}
+
+.slider__btn:hover {
+	background:rgb(210, 202, 202);
 }
 
 .slider__btn--prev {
@@ -479,8 +521,10 @@ body {
 }
 
 .btn:hover {
-	color: rgb(245, 233, 127) !important;
-	transition: color 0.2s ease-in;
+	color: #ff584e !important;
+	background: rgba(210, 202, 202, 0.8) !important;
+	font-weight: 700;
+	transition: all 0.2s ease-in;
 }
 
 .btn:active {
