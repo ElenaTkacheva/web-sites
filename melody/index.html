@@ -75,14 +75,97 @@
                 <button class="counter-button counter-up">
                     <img src="img/up.svg" alt="button up" class="counter-arrow counter-arrow-up">
                 </button>
-                <span class="counter">08</span>
+                <span class="floor-counter counter">08</span>
                 <button class="counter-button counter-down">
                     <img src="img/down.svg" alt="button down" class="counter-arrow counter-arrow-down">
                 </button>
             </div>
-            <button class="button button-primary">Смотреть  квартиры на этаже</button>
+            <button class="button button-primary view-flats">Смотреть  квартиры на этаже</button>
         </div>
     </main>
+    <div class="modal">
+        <div class="modal-dialog">
+            <button class="modal-close-button">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 2L26 26" stroke="#3596F5" stroke-width="3"/>
+                    <path d="M26 2L2 26" stroke="#3596F5" stroke-width="3"/>
+                </svg>
+            </button>
+            <div class="modal-image">
+                <h3 class="modal-title">Этаж <span class="modal-counter counter">07</span></h3>
+                <svg class="flats" width="433" height="408" viewBox="0 0 433 408" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <image id="image0" width="433" height="408" xlink:href="img/floor.png"/>
+                    <path d="M78.7293 0H0V82H121V29.1779H78.7293V0Z" fill="#3595F6" fill-opacity="0.75"/>
+                </svg>
+            </div>
+            <div class="modal-info">
+                <h3 class="modal-title">Выберите квартиру</h3>
+                <ul class="flat-list">
+                    <li class="flat-item">
+                        <a href="#" class="flat-link">кв. 40, 2 комн. 50 кв. м.</a>
+                    </li>
+                    <li class="flat-item">
+                        <a href="#" class="flat-link">кв. 41, 1 комн. 38.9 кв. м.</a>
+                    </li>
+                    <li class="flat-item">
+                        <a href="#" class="flat-link">кв. 42, 1 комн. 39.5 кв. м.</a>
+                    </li>
+                    <li class="flat-item">
+                        <a href="#" class="flat-link">кв. 43, 2 комн. 58 кв. м.</a>
+                    </li>
+                    <li class="flat-item">
+                        <a href="#" class="flat-link">кв. 44, 1 комн. 35.8 кв. м.</a>
+                    </li>
+                    <li class="flat-item">
+                        <a href="#" class="flat-link">кв. 45, 1 комн. 35.8 кв. м.</a>
+                    </li>
+                    <li class="flat-item">
+                        <a href="#" class="flat-link">кв. 46, 2 комн. 58.4 кв. м.</a>
+                    </li>
+                    <li class="flat-item">
+                        <a href="#" class="flat-link">кв. 47, 1 комн. 32.3 кв. м.</a>
+                    </li>
+                    <li class="flat-item">
+                        <a href="#" class="flat-link">кв. 48, 1 комн. 29.9 кв. м.</a>
+                    </li>
+                    <li class="flat-item">
+                        <a href="#" class="flat-link">кв. 49, 3 комн. 75.2 кв. м.</a>
+                    </li>
+                </ul>
+                <p class="modal-alert">Квартиры, отмеченные серым,<br/> уже выкуплены</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-left-column">
+                <img class="footer-logo" src="img/logo-footer.png" alt="logo">
+                <div class="footer-contacts">
+                    <span class="footer-text">Закажите звонок:</span>
+                    <a href="tel:+78431234567" class="footer-phone">8 (843) 123-45-67</a>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">
+                        <img src="img/facebook.png" alt="facebook" class="social-icon-image">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="img/instagram.png" alt="imstagram" class="social-icon-image">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="img/twitter.png" alt="twitter" class="social-icon-image">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="img/youtube.png" alt="youtube" class="social-icon-image">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-right-column">
+                <a href="#" class="footer-rights">Политика конфиденциальности</a>
+                <a href="#" class="footer-rights">Публичная оферта</a>
+                <a href="#" class="footer-rights">Контакты</a>
+            </div>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
